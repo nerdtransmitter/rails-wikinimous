@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+      <h1 class="col-lg-7 col-centered" id="title">
+        <%= @article.title.capitalize %>
+        <small>
+          <%= link_to article_path(@article), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class: "icons-title" do %>
+              <i class='fa-solid fa-trash-can'></i>
+          <% end  %>
+
+          <%= link_to edit_article_path, class: "icons-title" do %>
+          <i class="fa-solid fa-pen"></i>
+          <% end %>
+        </small>
+      </h1>
+  </div>
+  <div class="row">
+      <p class="col-lg-7 col-centered"><%= @article.content.gsub(/\"/, "").delete('[],') %></p>
+  </div>
+  <div class="row text-center">
+    <%= link_to articles_path, class: "icon col-lg-2 col-centered" do %>
+          <i class="fa-solid fa-caret-left"></i> Go back
+    <% end %>
+  </div>
+
+    </div>
+  </div>
+</div>

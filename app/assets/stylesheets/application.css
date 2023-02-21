@@ -13,3 +13,52 @@
  *= require_tree .
  *= require_self
  */
+ @import url('https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Martian+Mono&family=Montserrat:wght@300&family=Nunito:wght@300;400&family=Open+Sans:wght@300;400&family=Orbitron:wght@800;900&family=Playfair+Display+SC:wght@400;700&family=Playfair+Display:wght@600;700&family=Poppins:wght@400;600;700;800&display=swap');
+
+ h1, h2 {
+  font-family: 'Playfair Display';
+  padding: 20px;
+ }
+
+ #title {
+  font-weight: bolder;
+  margin-top: 30px;
+  font-size: 42px;
+  border-bottom: solid 1px lightskyblue;
+ }
+ .icons-title {
+  color: #8C9A9E !important;
+  text-decoration: none;
+  font-size: 50%;
+  font-weight: lighter;
+ }
+
+ .icon {
+  font-family: 'Playfair Display SC';
+  text-decoration: none;
+  font-weight: bold;
+  color: #D4F5F5;
+  background-color: #554348;
+  padding: 7px 9px;
+  border-radius: 4px;
+  font-size: 16px;
+ }
+
+.article-container {
+  width: 600px;
+  text-align: center;
+}
+
+.col-centered {
+  float: none;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 40px;
+  margin-bottom: 35px;
+}
+
+p {
+  font-family: 'Nunito';
+  font-size: 18px;
+  text-align: left;
+}

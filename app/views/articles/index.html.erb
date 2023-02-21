@@ -1,0 +1,19 @@
+<div class="container mt-3 p-3">
+  <h1>My Wiki</h1>
+
+  <% @articles.each do |article| %>
+    <div class="d-flex flex-row align-items-center justify-content-between">
+        <h2>
+          <%= link_to article.title, article_path(article), class: "text-decoration-none"  %>
+        </h2>
+        <%= link_to article_path(article), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} do %>
+          <i class='fa-solid fa-trash-can'></i>
+        <% end  %>
+    </div>
+
+    <% details = article.content.gsub(/\"/, "").delete('[]').split(".") %>
+    <p><%= details.first %>. <%= details[1] %>. <span class="text-muted">[...]</span></p>
+  <% end %>
+
+  <%= link_to "Create article", new_article_path, class: "text-decoration-none" %>
+</div>

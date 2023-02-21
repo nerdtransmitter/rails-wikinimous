@@ -1,5 +1,5 @@
-# Add your own tasks in files placed in lib/tasks ending in .rake,
-# for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.
+# Add your own articles in files placed in lib/articles ending in .rake,
+# for example lib/articles/capistrano.rake, and they will automatically be available to Rake.
 
 require_relative "config/application"
 
